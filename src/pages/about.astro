@@ -8,11 +8,11 @@ import Footer from "../components/Footer.astro";
     <article class="flex flex-col gap-5">
       <span class="flex gap-1 justify-center items-center">
         <h1
-          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-custom-rosa from-10% via-primary via-30% to-green-600 font-semibold"
         >
           Sobre mi ...
         </h1>
-        <img class="w-6" src="/images/arrow.svg" alt="" />
+        <!--  <img class="w-6" src="/images/arrow.svg" alt="" /> -->
       </span>
       <div
         class="history flex flex-col justify-between items-center flex-wrap gap-20"
@@ -36,27 +36,23 @@ import Footer from "../components/Footer.astro";
           <div class="flex justify-center items-center flex-col gap-10">
             <span class="flex gap-1 items-center">
               <h1
-                class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+                class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-custom-rosa from-10% via-primary via-30% to-green-600 font-semibold"
               >
-                Companies that support us
               </h1>
             </span>
             <div
               class="flex justify-between items-center gap-10 flex-wrap max-w-sm"
             >
-              <img class="w-12" src="/images/amazon.svg" alt="" />
-              <img class="w-12" src="/images/apple.svg" alt="" />
-              <img class="w-12" src="/images/android.svg" alt="" />
-              <img class="w-12" src="/images/bankin.svg" alt="" />
-              <img class="w-12" src="/images/brave.svg" alt="" />
-              <img class="w-12" src="/images/facebook.svg" alt="" />
-              <img class="w-12" src="/images/dropbox.svg" alt="" />
-              <img class="w-12" src="/images/samsung.svg" alt="" />
+              <img
+                class="hover:animate-jump w-80 object-cover"
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498936/AlexMain/128___ALEXMAIN__85A3397_oc8c1o.jpg"
+                alt=""
+              />
             </div>
           </div>
           <img
-            class="hover:animate-jump w-80"
-            src="/images/history.svg"
+            class="hover:animate-jump w-80 object-cover"
+            src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498940/AlexMain/136___ALEXMAIN__85A3451_vsolms.jpg"
             alt=""
           />
         </div>
@@ -66,35 +62,51 @@ import Footer from "../components/Footer.astro";
     <article class="flex flex-col gap-8">
       <span class="flex gap-1 justify-center items-center">
         <h1
-          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-custom-rosa from-10% via-primary via-30% to-green-600 font-semibold"
         >
-          Hello There!
+          Reseñas ...
         </h1>
-        <img class="w-6" src="/images/arrow.svg" alt="" />
+
+        <img class="w-6" src="" alt="" />
       </span>
-      <img
-        class="hover:animate-jump w-60 rounded-full m-auto"
-        src="/images/alex.webp"
-        alt=""
-      />
+      <div class="flex flex-wrap">
+        <img
+          class="hover:animate-jump w-60 rounded-lg mx-auto"
+          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498981/AlexMain/224_jock0h.jpg"
+          alt=""
+        />
+        <img
+          class="hover:animate-jump w-60 rounded-lg mx-auto"
+          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498928/AlexMain/112_t4waqz.jpg"
+          alt=""
+        />
+        <img
+          class="hover:animate-jump w-60 rounded-lg mx-auto"
+          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498926/AlexMain/107_an83ja.jpg"
+          alt=""
+        />
+        <img
+          class="hover:animate-jump w-60 rounded-lg mx-auto"
+          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498917/AlexMain/91_mf2dfj.jpg"
+          alt=""
+        />
+      </div>
       <p class="max-w-3xl text-center m-auto">
-        Hello, I hope you are doing well. My name is John Alexander Muñoz Yepez
-        - JAMY, and this is one of my first contributions to the community. It's
-        amazing what can be done with Astro. Follow me on my social media
-        accounts.
+        Gracias a todos los que confian en mi y me dan la oportunidad de hacer
+        lo que mas me gusta, la musica.
       </p>
       <span class="flex gap-5 justify-center items-center">
         <a
           target="_blank"
           class="button"
-          href="https://www.youtube.com/@JAMY_1/featured"
+          href="https://www.tiktok.com/@alexmaindj?_t=8hZ1dAQCyav&_r=1 "
         >
-          <span>YouTube</span></a
+          <span>Tik-tok</span></a
         >
         <a
           target="_blank"
           class="button"
-          href="https://www.instagram.com/jamy_10011/"
+          href=" https://instagram.com/alexmain_dj"
         >
           <span>Instagram</span></a
         >
@@ -108,7 +120,7 @@ import Footer from "../components/Footer.astro";
 </Layout>
 
 <style>
-  span.item {
+  /*   span.item {
     position: absolute;
     top: 40px;
     right: 0;
@@ -121,7 +133,7 @@ import Footer from "../components/Footer.astro";
     opacity: 0.8;
     display: none;
     z-index: -1;
-  }
+  } */
 
   @media (width > 300px) {
     span.item {
@@ -131,7 +143,7 @@ import Footer from "../components/Footer.astro";
     }
   }
 
-  span.item2 {
+  /*  span.item2 {
     position: absolute;
     top: 95%;
     left: 55%;
@@ -145,7 +157,7 @@ import Footer from "../components/Footer.astro";
     display: none;
     z-index: -1;
   }
-
+ */
   @media (width > 600px) {
     span.item2 {
       right: 100px;
@@ -154,7 +166,7 @@ import Footer from "../components/Footer.astro";
     }
   }
 
-  span.item3 {
+  /*   span.item3 {
     position: absolute;
     top: 120px;
     left: 0;
@@ -167,7 +179,7 @@ import Footer from "../components/Footer.astro";
     opacity: 0.8;
     display: none;
     z-index: -1;
-  }
+  } */
 
   @media (width > 300px) {
     span.item3 {
@@ -210,7 +222,7 @@ import Footer from "../components/Footer.astro";
     position: absolute;
     border-radius: 50%;
     z-index: -1;
-    background: linear-gradient(10deg, blue, green);
+    background: linear-gradient(10deg, #f3156b, #00fa00);
     transition: 1s ease;
   }
 
