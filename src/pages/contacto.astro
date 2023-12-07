@@ -3,75 +3,183 @@ import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="contacto">
+<Layout title="Contacto">
   <section class="px-8% py-24 flex flex-col justify-center items-center gap-8">
     <h1
       class="text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 via-primary to-green-600"
     >
       Contacto
     </h1>
-    <p class="text-xl text-center text-gray-700">
+    <p class="text-xl text-center text-gray-300">
       Si tienes alguna duda, comentario o sugerencia, no dudes en contactarme.
     </p>
-    <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      class="bg-gray-100 max-w-md p-6 rounded-lg"
-    >
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
-          >Tu nombre:</label
-        >
-        <input
-          class="w-full px-3 py-2 text-gray-700 border rounded focus:outline-none focus:shadow-outline"
-          id="name"
-          type="text"
-          name="name"
-          placeholder="Escribe tu nombre aquí"
-        />
+
+    <article>
+      <div class="flex justify-center">
+        <ol>
+          <li class="text-gray-300 flex items-center">
+            <span>
+              <img
+                width="50"
+                height="30"
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1701907460/AlexMain/whatsapp_hymsxb.png"
+                alt="whatsapp"
+              />
+            </span>
+
+            <h3 class="mx-8">630 64 89 39</h3>
+          </li>
+
+          <li class="my-6 text-gray-300 flex items-center">
+            <span>
+              <img
+                width="50"
+                height="30"
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1701907459/AlexMain/correo-electronico_czzvgf.png"
+                alt="correo"
+              />
+            </span>
+            <h3 class="mx-8">alexandermaindj@gmail.com</h3>
+          </li>
+        </ol>
       </div>
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="email"
-          >Tu correo electrónico:</label
-        >
-        <input
-          class="w-full px-3 py-2 text-gray-700 border rounded focus:outline-none focus:shadow-outline"
-          id="email"
-          type="email"
-          name="email"
-          placeholder="Escribe tu correo electrónico aquí"
-        />
+    </article>
+
+    <article>
+      <h2
+        class="text-3xl text-center font-semibold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 via-primary to-green-600"
+      >
+        Redes Sociales
+      </h2>
+      <p class="my-8 text-xl text-center text-gray-300">
+        Tambien puedes contactarme por mis redes sociales.
+      </p>
+      <div class="my-12 flex justify-center">
+        <ol>
+          <li class="flex text-gray-300 items-center">
+            <span>
+              <img
+                width="50"
+                height="30"
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1701907460/AlexMain/instagram_lhni5z.png"
+                alt="instagram"
+              />
+            </span>
+            <h3 class="mx-8">
+              <a href="https://www.instagram.com/alexmain_dj/?hl=es-la"
+                >alexmain_dj</a
+              >
+            </h3>
+          </li>
+          <li class="my-6 flex text-gray-300 items-center">
+            <span>
+              <img
+                width="50"
+                height="30"
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1701907459/AlexMain/facebook-2_sdtq39.png"
+                alt="facebook"
+              />
+            </span>
+            <h3 class="mx-8">
+              <a
+                href="https:facebook.com/alexanderMaindj"
+                target="_blank"
+                rel="noopener noreferrer">alexanderMaindj</a
+              >
+            </h3>
+          </li>
+
+          <li class="my-6 flex text-gray-300 items-center">
+            <span>
+              <img
+                width="50"
+                height="30"
+                src="https://res.cloudinary.com/pruebaweb/image/upload/v1701907815/AlexMain/tiktok_wyo0fe.png"
+                alt="tik-tok"
+              />
+            </span>
+            <h3 class="mx-8">
+              <a
+                href="https://www.tiktok.com/@Alexmaindj?lang=es"
+                target="_blank"
+                rel="noopener noreferrer">@Alexmaindj</a
+              >
+            </h3>
+          </li>
+        </ol>
       </div>
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="phone"
-          >Tu teléfono:</label
-        >
-        <input
-          class="w-full px-3 py-2 text-gray-700 border rounded focus:outline-none focus:shadow-outline"
-          id="phone"
-          type="tel"
-          name="phone"
-          placeholder="Escribe tu teléfono aquí"
-        />
-      </div>
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="message"
-          >Mensaje:</label
-        >
-        <textarea
-          class="w-full px-3 py-2 text-gray-700 border rounded focus:outline-none focus:shadow-outline"
-          id="message"
-          name="message"
-          placeholder="Escribe tu mensaje aquí"></textarea>
-      </div>
-      <div class="text-center">
-        <button
-          class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600"
-          type="submit">Enviar</button
-        >
-      </div>
-    </form>
+    </article>
   </section>
   <Footer />
+
+  <span class="item"></span>
+  <span class="item2"></span>
+  <span class="item3"></span>
 </Layout>
+
+<style>
+  span.item {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 7rem;
+    height: 8rem;
+    transform: rotate(90deg) skewX(-12deg);
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(3.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+  @media (width > 300px) {
+    span.item {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+  span.item2 {
+    position: absolute;
+    top: 95%;
+    left: 55%;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, rgb(171, 201, 4), rgb(163, 11, 233));
+    filter: blur(5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 700px) {
+    span.item2 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+  span.item3 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 11rem;
+    height: 8rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, blue, violet);
+    filter: blur(4rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+  @media (width > 300px) {
+    span.item3 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+</style>
