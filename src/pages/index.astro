@@ -25,7 +25,7 @@ import Galeria from "../components/Galeria.astro";
     </div>
   </section>
 
-  <section class="section-two relative px-8% py-10 flex flex-col gap-8">
+  <section class="section-two relative px-8% py-2 flex flex-col gap-8">
     <span class="item"></span>
     <!-- aqui los servicios -->
     <article>
@@ -63,6 +63,19 @@ import Galeria from "../components/Galeria.astro";
         alt=""
       />
     </article>
+    <div class="flex justify-center">
+      <video
+        width="848"
+        height="480"
+        controls
+        class="flex justify-center items-center border-2 rounded-md p-2.5"
+      >
+        <source
+          src="https://res.cloudinary.com/pruebaweb/video/upload/v1701901555/AlexMain/e425ec37-cf97-4e58-9fee-48174bc87203_o2gipx.mov"
+          type="video/mp4"
+        />Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
   </section>
 
   <section class="section-three relative px-8% py-10 flex flex-col gap-8">
@@ -78,6 +91,19 @@ import Galeria from "../components/Galeria.astro";
       </span>
     </article>
 
+    <!-- <div class="flex justify-center">
+      <video
+        width="848"
+        height="480"
+        controls
+        class="flex justify-center items-center border-2 rounded-md p-2.5"
+      >
+        <source
+          src="https://res.cloudinary.com/pruebaweb/video/upload/v1701901555/AlexMain/e425ec37-cf97-4e58-9fee-48174bc87203_o2gipx.mov"
+          type="video/mp4"
+        />Tu navegador no soporta el elemento de video.
+      </video>
+    </div> -->
     <article
       class="art2 w-full text-white text-lg flex justify-between items-center flex-wrap"
     >
@@ -95,7 +121,7 @@ import Galeria from "../components/Galeria.astro";
     background-image:
       linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       /* url(/images/111ALEXMAIN.webp); */
-        url(https://res.cloudinary.com/pruebaweb/video/upload/v1701901555/AlexMain/e425ec37-cf97-4e58-9fee-48174bc87203_o2gipx.mov);
+        url(https://res.cloudinary.com/pruebaweb/video/upload/v1701890003/AlexMain/dzdtxfifrgno2huoc5vb.mov);
 
     width: 100%;
     min-height: calc(100vh - 52px);
