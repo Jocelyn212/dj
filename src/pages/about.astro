@@ -4,7 +4,9 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Info">
-  <section class="px-8% py-10 flex flex-col gap-24 text-white">
+  <section
+    class="px-8% py-10 flex flex-col gap-24 text-white justify-center items-center"
+  >
     <article class="flex flex-col gap-5">
       <span class="flex gap-1 justify-center items-center">
         <h1
@@ -12,188 +14,161 @@ import Footer from "../components/Footer.astro";
         >
           Sobre mi ...
         </h1>
-        <!--  <img class="w-6" src="/images/arrow.svg" alt="" /> -->
       </span>
-      <div
-        class="history flex flex-col justify-between items-center flex-wrap gap-20"
-      >
-        <article class="">
-          <h2>biografía</h2>
-
-          <!--  <img
-            src="https://example.com/imagen-de-alexmain.jpg"
-            alt="Alexmain"
-          /> -->
-
-          <p class="text-justify">
-            <strong>Nacido en Barcelona en 1983</strong>, Alexmain es un técnico
-            de sonido y DJ.
-          </p>
-
-          <p class="text-justify">
-            Empezó a mezclar con tocadiscos en 1998 en radio Sallent, donde
-            nació su pasión por la música makina.
-          </p>
-
-          <p>
-            Con los años, ha perfeccionado su técnica y se ha adaptado a nuevos
-            estilos como el house, el latin house, el comercial y el remember.
-          </p>
-
-          <h3>Trayectoria profesional</h3>
-
-          <p>
-            Ha tenido múltiples residencias en pubs y discotecas de la escena
-            barcelonesa. También ha sido el DJ oficial de la gay pride de
-            Manresa durante varios años.
-          </p>
-
-          <p>
-            Es capaz de desenvolverse en cualquier evento, ya sea para
-            ayuntamientos, bodas o eventos privados. Con el paso de los años, ha
-            adquirido la habilidad de acertar con cada estilo y tema a poner,
-            haciendo que sus eventos se conviertan en algo único y personal para
-            su público.
-          </p>
-
-          <h3>Logros</h3>
-
-          <ul>
-            <li>
-              Quedó primero en dos concursos de DJ, uno organizado por la
-              discoteca Bruc Bananas y el otro organizado por la Casa de la
-              Música de Manresa y la sala Stroika.
-            </li>
-            <li>
-              Su primera residencia, y con la que sigue siendo parte, es en la
-              sala Vips Pool del grupo Bages comedy. Otras residencias a
-              destacar son Eitwo y Bruc bananas.
-            </li>
-            <li>
-              Grandes DJ y profesionales del sector como Gabriel Cubero, Ricardo
-              del Horno y Miquel Casas de "Don Disco" confían en su saber hacer
-              para ir a eventos en su nombre.
-            </li>
-          </ul>
-
-          <p>Contratarlo es garantía de cercanía y diversión.</p>
-        </article>
-
-        <!-- <article class="text-left">
-          <h5>Alexmain Nacido en Barcelona en 1983 Técnico de sonido y dj.</h5>
-          <p>
-            Comenzó a mezclar con tocadiscos en 1998 en radio Sallent, de ahí,
-            nació su pasión mezclando musica makina. A traves de los años, fué
-            perfeccionando su técnica y adaptándose a nuevos estilos como el
-            house, latin house, comercial, y remember.
-          </p>
-          <p>
-            Pasando por múltiples residencias en pubs y discotecas de la escena
-            barcelonesa, tambien ha sido el deejay oficial de la gay pride de
-            Manresa durante varios años, capaz de desenvolverse en cualquier
-            evento, ya sea para ayuntamientos, bodas y eventos privados. Con el
-            paso de los años a adquirido la habilidad de acertar con cada estilo
-            y tema a poner, haciendo que sus eventos se conviertan en algo único
-            y personal para su público.
-          </p>
-          <p>
-            Algunos logros fueron quedar primero en dos concursos de Dj, uno
-            organizado por la discoteca Bruc Bananas y el otro organizado por la
-            Casa de la Música de Manresa y la sala Stroika. Su primera
-            residencia y con la cual sigue siendo parte es en la sala Vips Pool
-            del grupo Bages comedy, otras residencias a destacar son Eitwo, Bruc
-            bananas... Grandes dj y profesionales del sector como Gabriel
-            Cubero, Ricardo del Horno, Miquel Casas de "Don Disco" confían en su
-            saber hacer para ir a eventos en su nombre. Contratarlo es garantía
-            de cercanía y diversión.
-          </p>
-        </article> -->
-        <div class="support flex gap-52 flex-wrap justify-center">
-          <div class="flex justify-center items-center flex-col gap-10">
-            <span class="flex gap-1 items-center">
-              <h1
-                class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-custom-rosa from-10% via-primary via-30% to-green-600 font-semibold"
-              >
-              </h1>
-            </span>
-            <div
-              class="flex justify-between items-center gap-10 flex-wrap max-w-sm"
-            >
-              <img
-                class="hover:animate-jump w-80 object-cover"
-                src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498936/AlexMain/128___ALEXMAIN__85A3397_oc8c1o.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <img
-            class="hover:animate-jump w-80 object-cover"
-            src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498940/AlexMain/136___ALEXMAIN__85A3451_vsolms.jpg"
-            alt=""
-          />
+      <!-- primer div -->
+      <div class="w-full h-auto flex flex-col justify-start items-start gap-6">
+        <!--  <div class="w-full self-stretch text-grey-300 text-xl mx-8">
+          <strong>Alexmain</strong> es un técnico de sonido y DJ. -->
+        <!-- segundo Div -->
+        <div class="w-full self-stretch text-grey-300 text-xl mx-8 pt-8">
+          <strong>Alexmain es un técnico de sonido y DJ</strong> , Nacido en
+          Barcelona en 1983.
         </div>
+        <!-- tercer div -->
+        <div class="text-xl mx-8">
+          <p>
+            Empezó a mezclar con tocadiscos en 1998 en radio Sallent, donde
+            nació su pasión por la música makina. Con los años, ha perfeccionado
+            su técnica y se ha adaptado a nuevos estilos como el house, el latin
+            house, el comercial y el remember.
+          </p>
+        </div>
+        <!-- Cuarto Div -->
+        <div class="div-padre flex flex-col md:flex-row mx-8">
+          <div class="div-hijo-1 mr-10 w-full md:w-1/2">
+            <h3
+              class="self-stretch text-center text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-custom-rosa from-10% via-primary via-30% to-green-600 font-semibold"
+            >
+              Trayectoria profesional
+            </h3>
+
+            <p>
+              Ha tenido múltiples residencias en pubs y discotecas de la escena
+              barcelonesa. También ha sido el DJ oficial de la gay pride de
+              Manresa durante varios años.
+            </p>
+            <br />
+
+            <p>
+              Es capaz de desenvolverse en cualquier evento, ya sea para
+              ayuntamientos, bodas o eventos privados.
+            </p>
+            <br />
+            <p>
+              Con el paso de los años, ha adquirido la habilidad de acertar con
+              cada estilo y tema a poner, haciendo que sus eventos se conviertan
+              en algo único y personal para su público.
+            </p>
+          </div>
+          <div class="div-hijo-2 w-full md:w-1/2">
+            <h3
+              class="text-center text-xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-custom-rosa from-10% via-primary via-30% to-green-600 font-semibold"
+            >
+              Logros
+            </h3>
+            <ul>
+              <li>
+                Quedó primero en dos concursos de DJ, uno organizado por la
+                discoteca Bruc Bananas y el otro organizado por la Casa de la
+                Música de Manresa y la sala Stroika.
+              </li>
+              <li>
+                Su primera residencia, y con la que sigue siendo parte, es en la
+                sala Vips Pool del grupo Bages comedy.<br /> Otras residencias a
+                destacar son Eitwo y Bruc bananas.
+              </li>
+              <li>
+                Grandes DJ y profesionales del sector como Gabriel Cubero,
+                Ricardo del Horno y Miquel Casas de "Don Disco" confían en su
+                saber hacer para ir a eventos en su nombre.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="mx-8">Contratarlo es garantía de cercanía y diversión.</p>
       </div>
     </article>
+  </section>
 
-    <article class="flex flex-col gap-8">
-      <span class="flex gap-1 justify-center items-center">
+  <div class="support flex gap-52 flex-wrap justify-center">
+    <div class="flex justify-center items-center flex-col gap-10">
+      <span class="flex gap-1 items-center">
         <h1
           class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-custom-rosa from-10% via-primary via-30% to-green-600 font-semibold"
         >
-          Reseñas ...
         </h1>
-
-        <img class="w-6" src="" alt="" />
       </span>
-      <div class="flex flex-wrap">
+      <div class="flex justify-between items-center gap-10 flex-wrap max-w-sm">
         <img
-          class="hover:animate-jump w-60 rounded-lg mx-auto my-4"
-          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498981/AlexMain/224_jock0h.jpg"
-          alt=""
-        />
-        <img
-          class="hover:animate-jump w-60 rounded-lg mx-auto my-4"
-          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498928/AlexMain/112_t4waqz.jpg"
-          alt=""
-        />
-        <img
-          class="hover:animate-jump w-60 rounded-lg mx-auto my-4"
-          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498926/AlexMain/107_an83ja.jpg"
-          alt=""
-        />
-        <img
-          class="hover:animate-jump w-60 rounded-lg mx-auto my-4"
-          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498917/AlexMain/91_mf2dfj.jpg"
+          class="hover:animate-jump w-80 object-cover"
+          src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498936/AlexMain/128___ALEXMAIN__85A3397_oc8c1o.jpg"
           alt=""
         />
       </div>
-      <p class="max-w-3xl text-center m-auto">
-        Gracias a todos los que confian en mi y me dan la oportunidad de hacer
-        lo que mas me gusta, la musica.
-      </p>
-      <span class="flex gap-5 justify-center items-center">
-        <a
-          target="_blank"
-          class="button"
-          href="https://www.tiktok.com/@alexmaindj?_t=8hZ1dAQCyav&_r=1 "
-        >
-          <span>Tik-tok</span></a
-        >
-        <a
-          target="_blank"
-          class="button"
-          href=" https://instagram.com/alexmain_dj"
-        >
-          <span>Instagram</span></a
-        >
-      </span>
-    </article>
-    <span class="item"></span>
-    <span class="item2"></span>
-    <span class="item3"></span>
-  </section>
-  <Footer />
+    </div>
+    <img
+      class="hover:animate-jump w-80 object-cover"
+      src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498940/AlexMain/136___ALEXMAIN__85A3451_vsolms.jpg"
+      alt=""
+    />
+  </div>
+
+  <article class="flex flex-col gap-8">
+    <span class="flex gap-1 justify-center items-center">
+      <h1
+        class="my-8 text-2xl text-transparent bg-clip-text bg-gradient-to-br from-custom-rosa from-10% via-primary via-30% to-green-600 font-semibold"
+      >
+        Reseñas ...
+      </h1>
+    </span>
+    <div class="flex flex-wrap">
+      <img
+        class="hover:animate-jump w-60 rounded-lg mx-auto my-4"
+        src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498981/AlexMain/224_jock0h.jpg"
+        alt=""
+      />
+      <img
+        class="hover:animate-jump w-60 rounded-lg mx-auto my-4"
+        src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498928/AlexMain/112_t4waqz.jpg"
+        alt=""
+      />
+      <img
+        class="hover:animate-jump w-60 rounded-lg mx-auto my-4"
+        src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498926/AlexMain/107_an83ja.jpg"
+        alt=""
+      />
+      <img
+        class="hover:animate-jump w-60 rounded-lg mx-auto my-4"
+        src="https://res.cloudinary.com/pruebaweb/image/upload/v1699498917/AlexMain/91_mf2dfj.jpg"
+        alt=""
+      />
+    </div>
+    <p class="max-w-3xl text-center m-auto">
+      Gracias a todos los que confian en mi y me dan la oportunidad de hacer lo
+      que mas me gusta, la musica.
+    </p>
+    <span class="flex gap-5 justify-center items-center">
+      <a
+        target="_blank"
+        class="button"
+        href="https://www.tiktok.com/@alexmaindj?_t=8hZ1dAQCyav&_r=1 "
+      >
+        <span>Tik-tok</span></a
+      >
+      <a
+        target="_blank"
+        class="button"
+        href=" https://instagram.com/alexmain_dj"
+      >
+        <span>Instagram</span></a
+      >
+    </span>
+  </article>
+  <span class="item"></span>
+  <span class="item2"></span>
+  <span class="item3"></span>
 </Layout>
+<Footer />
 
 <style>
   span.item {
