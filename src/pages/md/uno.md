@@ -3,13 +3,13 @@ title: "detail-5"
 layout: "../../layouts/Layout.astro"
 ---
 
-<section transition:animate="slide"  class='flex gap-7 justify-center items-center flex-wrap text-white px-8% py-20'>
+<section  class='flex gap-7 justify-center items-center flex-wrap text-white px-8% py-20'>
 <img
     class="rounded-xl"
     src="https://res.cloudinary.com/pruebaweb/image/upload/v1701315971/AlexMain/4_robcff.png"
-    alt="pack1"
+    alt="pack1" width="100%" style="max-width:800px;"
   />
-  <div class="flex flex-col gap-4">
+  <div class="flex flex-col gap-4" style="width:800px;">
     <h2
       class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
     >
@@ -29,12 +29,7 @@ layout: "../../layouts/Layout.astro"
       </ul>
     </p>
     <a href="/servicios" class='w-20 h-7 border-gray-50 border-2 rounded-md flex justify-center items-center hover:bg-blue-900 transition'>Cerrar</a>
-   <!-- <img class='rounded-xl' src="/images/img2.webp" alt="camiseta" />
-   <div class='flex flex-col gap-4'>
-   <h2 class='text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold'>TITLE</h2>
-   <h4>Lorem ipsum dolor sit amet consectetur</h4>
-   <p class='max-w-md'>Esta es una prueba.</p>
-   <button class='w-20 h-7 border-gray-50 border-2 rounded-md flex justify-center items-center hover:bg-blue-900 transition'>Buy</button> -->
+   
    </div>
 </section>
 
